@@ -10,5 +10,22 @@ public class Main {
         nuevaCola.encolar("Jose");
 
         nuevaCola.desencolar();
+
+        // Prueba con pilas
+        Pila pilaDePizzas = new Pila(5);  // pila de pizzas en una pizzeria
+        pilaDePizzas.apilar("Pizza #1");
+        pilaDePizzas.apilar("Pizza #2");
+        pilaDePizzas.apilar("Pizza #3");
+        pilaDePizzas.apilar("Pizza #4");
+        pilaDePizzas.apilar("Pizza #5");
+        // pilaDePizzas.apilar("Pizza #6"); lanza error por no tener mas espacio
+        System.out.println("La primera pizza a repartir es: " + pilaDePizzas.mostrarTope());
+
+        pilaDePizzas.desapilar();
+        pilaDePizzas.desapilar();
+        pilaDePizzas.desapilar();
+        pilaDePizzas.desapilar();
+        pilaDePizzas.desapilar();
+
     }
 }
